@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_controller.xml"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.effectivemobiletest.presentation.screen.tabs.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_vacancyDetailFragment"
+            app:destination="@id/vacancyDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appliesFragment"
+        android:name="com.example.effectivemobiletest.presentation.screen.tabs.applies.AppliesFragment"
+        android:label="fragment_applies"
+        tools:layout="@layout/fragment_applies" />
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.example.effectivemobiletest.presentation.screen.tabs.saved.SavedFragment"
+        android:label="fragment_saved"
+        tools:layout="@layout/fragment_saved" >
+        <action
+            android:id="@+id/action_savedFragment_to_vacancyDetailFragment"
+            app:destination="@id/vacancyDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messagesFragment"
+        android:name="com.example.effectivemobiletest.presentation.screen.tabs.messages.MessagesFragment"
+        android:label="fragment_messages"
+        tools:layout="@layout/fragment_messages" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.effectivemobiletest.presentation.screen.tabs.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/vacancyDetailFragment"
+        android:name="com.example.effectivemobiletest.presentation.screen.detail.VacancyDetailFragment"
+        android:label="fragment_vacancy_detail"
+        tools:layout="@layout/fragment_vacancy_detail" />
+</navigation>
